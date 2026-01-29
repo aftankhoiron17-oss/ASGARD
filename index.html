@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ASGARD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="opening" class="opening" onclick="enterSite()">
+  <div class="opening-content">
+    <h1>Welcome to</h1>
+    <h2>ASGARD</h2>
+    <p>Part Of Giorzaviet</p>
+    <span>Di klik dimana aja kak</span>
+  </div>
+</div>
+
+
+
+<audio id="bgm" loop preload="auto">
+  <source src="assets/audio/backsound.mp3" type="audio/mpeg">
+</audio>
+
+
+  <div id="mainContent" class="overlay hidden">
+  <h1>Asgard</h1>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <img id="modalImg">
+        <h3 id="modalName"></h3>
+        <p><b>Tanggal Lahir:</b> <span id="modalBirth"></span></p>
+        <p><b>IG:</b> <span id="modalNick"></span></p>
+        <p><b>Ekskul:</b> <span id="modalActivity"></span></p>
+      </div>
+    </div>
+
+    <nav>
+      <button onclick="showSection('anggota')">Profil Anggota</button>
+       <button onclick="showSection('strukturMenu')">Struktur Kelas</button>
+      <button onclick="showSection('galeri')">Our Memories</button>
+    </nav>
+
+    <section id="anggota" class="content">
+      <h2>Asgardians</h2>
+      <div class="grid">
+        <div class="card" onclick="openModal(
+    'assets/anggota/1.jpg',
+    'Aftan Khoiron Muafie',
+    '10 November 2007',
+    'aftan.mfi',
+    'MPS, Volly',
+  )">
+          <img src="assets/anggota/1.jpg">
+          <p>Aftan Khoiron Muafie</p>
+        </div>
+
+        <div class="card" onclick="openModal(
+    'assets/anggota/2.jpg',
+    'Ajeng Puspa Ratih',
+    '15 JUli 2007',
+    'ajengpspraatih',
+    'OSIS',
+  )"> 
+          <img src="assets/anggota/2.jpg">
+          <p>Ajeng Puspa Ratih</p>
+        </div>
+
+        <div class="card" onclick="openModal(
+    'assets/anggota/3.jpg',
+    'Aldis Mulan Hamsah',
+    '11 September 2008',
+    'aldisliked',
+    'LDP',
+  )"> 
+          <img src="assets/anggota/3.jpg">
+          <p>Aldis Mulan Hamsah</p>
+        </div>
+
+        <div class="card"onclick="openModal(
+    'assets/anggota/4.jpg',
+    'Annisa Nurramadhani',
+    '11 September 2008',
+    'nnissacn',
+    'OSIS',
+  )"> 
+          <img src="assets/anggota/4.jpg">
+          <p>Annisa Nurramadhani</p>
+        </div>
+
+        <div class="card"onclick="openModal(
+    'assets/anggota/5.jpg',
+    'Azura Kirana',
+    '31 Mei 2008',
+    'azurakiirana',
+    'OSIS, CBS Ekonomi, Tari',
+  )"> 
+          <img src="assets/anggota/5.jpg">
+          <p>Azura Kirana</p>
+        </div>
+
+        <div class="card"onclick="openModal(
+    'assets/anggota/6.jpg',
+    'Fadhil Saifuddin Zaidi',
+    '2 Desember 2007',
+    'fadhil.zaidi',
+    'UKS, Pramuka',
+  )"> 
+          <img src="assets/anggota/6.jpg">
+          <p>Fadhil Saifuddin Zaidi</p>
+        </div>
+       <div class="card"onclick="openModal(
+    'assets/anggota/7.jpg',
+    'Fadhila Tisya Florenza',
+    '5 Mei 2008',
+    'dhilhlh',
+    'LDP, CBS Informatika, Debat',
+  )"> 
+          <img src="assets/anggota/7.jpg">
+          <p>Fadhila Tisya Florenza</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/8.jpg',
+    'Habib Ahmad Subhandru',
+    '4 Maret 2008',
+    'handru_13',
+    'UKS, KIR',
+  )"> 
+          <img src="assets/anggota/8.jpg">
+          <p>Habib Ahmad Subhandru</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/9.jpg',
+    'Khanza Lufita',
+    '16 April 2008',
+    'khanzalufitaa',
+    'MPS',
+  )"> 
+          <img src="assets/anggota/9.jpg">
+          <p>Khanza Lufita</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/10.jpg',
+    'Muhammad Azri Akbar',
+    '2 April 2008',
+    'azri_akbar08',
+    'OSIS, CBS Geo',
+  )"> 
+          <img src="assets/anggota/10.jpg">
+          <p>Muhammad Azri Akbar</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/11.jpg',
+    'Muhammad Rafi Kurnianto',
+    '2 Oktober 2008',
+    'rafikuuur',
+    'MPS, KIR',
+  )"> 
+          <img src="assets/anggota/11.jpg">
+          <p>Muhammad Rafi Kurnianto</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/12.jpg',
+    'Muhammad Rifqi Zahran',
+    '22 Desember 2008',
+    'mhdrifqizhrnn_',
+    'LDP, Volly',
+  )"> 
+          <img src="assets/anggota/12.jpg">
+          <p>Muhammad Rifqi Zahran</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/13.jpg',
+    'Nuril Salsabila',
+    '24 Mei 2008',
+    '_nurilsalsabilaa',
+    'OSIS, Paskibraka',
+  )"> 
+          <img src="assets/anggota/13.jpg">
+          <p>Nuril Salsabila</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/14.jpg',
+    'Nuryatul Aina Desra',
+    '28 Juli 2008',
+    'ainadesra_',
+    'UKS, Hadrah',
+  )"> 
+          <img src="assets/anggota/14.jpg">
+          <p>Nuryatul Aina Desra</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/15.jpg',
+    'Raisha Aliyya Diandra',
+    '31 Mei 2008',
+    'rhsa.lyy_',
+    'MPS',
+  )"> 
+          <img src="assets/anggota/15.jpg">
+          <p>Raisha Aliyya Diandra</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/16.jpg',
+    'Raka Wibowo',
+    '10 Juli 2008',
+    'raka_w_bw',
+    'OSIS, CBS Geografi',
+  )"> 
+          <img src="assets/anggota/16.jpg">
+          <p>Raka Wibowo</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/17.jpg',
+    'Rumaisha Rachmawan',
+    '15 Juni 2008',
+    'rchmyshaa',
+    'OSIS, CBS Ekonomi',
+  )"> 
+          <img src="assets/anggota/17.jpg">
+          <p>Rumaisha Rachmawan</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/18.jpg',
+    'Suchika Shandianing Jiwatami',
+    '-',
+    'suclkaa',
+    'MPS, Debat',
+  )"> 
+          <img src="assets/anggota/18.jpg">
+          <p>Sucika Shandianing Jiwatami</p>
+        </div>
+        <div class="card"onclick="openModal(
+    'assets/anggota/19.jpg',
+    'Sultan Anang Syamsudin',
+    '27 September 2008',
+    'sultananangg',
+    'Ketua Hadrah',
+  )"> 
+          <img src="assets/anggota/19.jpg">
+          <p>Sultan Anang Syamsudin</p>
+        </div>
+       <div class="card"onclick="openModal(
+    'assets/anggota/20.jpg',
+    'Vifi Gestia',
+    '18 Agustus 2008',
+    'vifigest_',
+    'KIR',
+  )"> 
+          <img src="assets/anggota/20.jpg">
+          <p>Vifi Gestia</p>
+        </div>
+       <div class="card"onclick="openModal(
+    'assets/anggota/21.jpg',
+    'Zahira Mulya',
+    '5 Agustus 2008',
+    'zarahiraam',
+    'LDP',
+  )"> 
+          <img src="assets/anggota/21.jpg">
+          <p>Zahira Mulya</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="strukturMenu" class="content hidden">
+  <h2>Pilih Struktur Kelas</h2>
+
+  <div style="margin-top: 30px;">
+    <button onclick="showSection('struktur11')">Kelas XI</button>
+    <button onclick="showSection('struktur12')">Kelas XII</button>
+  </div>
+</section>
+
+<section id="struktur11" class="content hidden">
+  <h2>Struktur Kelas XI-5</h2>
+
+<div class="struktur wali">
+    <div class="card struktur-card">
+      <img src="assets/anggota/wali1.jpg">
+      <p><b>Wali Kelas</b><br>Bapak Eddry Ardiandra S.Pd</p>
+    </div>
+  </div>
+
+
+  <div class="struktur dua">
+    <div class="card struktur-card">
+      <img src="assets/anggota/1.jpg">
+      <p><b>Ketua Kelas</b><br>Aftan Khoiron Muafie</p>
+    </div>
+
+    <div class="card struktur-card">
+      <img src="assets/anggota/11.jpg">
+      <p><b>Wakil Ketua</b><br>Muhammad Rafi Kurnianto</p>
+    </div>
+  </div>
+
+
+  <div class="struktur dua">
+    <div class="card struktur-card">
+      <img src="assets/anggota/5.jpg">
+      <p><b>Sekretaris I</b><br>Azura Kirana</p>
+    </div>
+
+     <div class="card struktur-card">
+      <img src="assets/anggota/6.jpg">
+      <p><b>Sekretaris II</b><br>Fadhil Saifuddin Zaidi</p>
+    </div>
+
+    <div class="card struktur-card">
+      <img src="assets/anggota/9.jpg">
+      <p><b>Bendahara I</b><br>Khanza Lufita</p>
+    </div>
+    <div class="card struktur-card">
+      <img src="assets/anggota/10.jpg">
+      <p><b>Bendahara II</b><br>Muhammad Azri Akbar</p>
+    </div>
+
+  <br>
+  <button onclick="showSection('strukturMenu')">⬅ Kembali</button>
+</section>
+
+<section id="struktur12" class="content hidden">
+  <h2>Struktur Kelas XII-5</h2>
+
+
+  <div class="struktur wali">
+    <div class="card struktur-card">
+      <img src="assets/anggota/wali.jpg">
+      <p><b>Wali Kelas</b><br>Ibu Firma Yuliani S.Pd.I</p>
+    </div>
+  </div>
+
+
+  <div class="struktur dua">
+    <div class="card struktur-card">
+      <img src="assets/anggota/11.jpg">
+      <p><b>Ketua Kelas</b><br>Muhammad Rafi Kurnianto</p>
+    </div>
+
+    <div class="card struktur-card">
+      <img src="assets/anggota/1.jpg">
+      <p><b>Wakil Ketua</b><br>Aftan Khoiron Muafie</p>
+    </div>
+  </div>
+
+
+  <div class="struktur dua">
+    <div class="card struktur-card">
+      <img src="assets/anggota/9.jpg">
+      <p><b>Sekretaris I</b><br>Khanza Lufita</p>
+    </div>
+
+     <div class="card struktur-card">
+      <img src="assets/anggota/12.jpg">
+      <p><b>Sekretaris II</b><br>Muhammad Rifqi Zahran</p>
+    </div>
+
+    <div class="card struktur-card">
+      <img src="assets/anggota/5.jpg">
+      <p><b>Bendahara I</b><br>Azura Kirana</p>
+    </div>
+    <div class="card struktur-card">
+      <img src="assets/anggota/19.jpg">
+      <p><b>Bendahara II</b><br>Sultan Anang Syamsudin</p>
+    </div>
+
+   
+  </div>
+
+  <br>
+  <button onclick="showSection('strukturMenu')">⬅ Kembali</button>
+</section>
+
+
+
+
+    <section id="galeri" class="content hidden">
+      <h2>Memories</h2>
+      <div class="grid">
+        <img src="assets/galeri/g1.jpg">
+        <img src="assets/galeri/g2.jpg">
+        <img src="assets/galeri/g3.jpg">
+        <img src="assets/galeri/g4.jpg">
+        <img src="assets/galeri/g5.jpg">
+        <img src="assets/galeri/g6.jpg">
+        <img src="assets/galeri/g7.jpg">
+        <img src="assets/galeri/g8.jpg">
+        <img src="assets/galeri/g9.jpg">
+        <img src="assets/galeri/g10.jpg">
+        <img src="assets/galeri/g11.jpg">
+        <img src="assets/galeri/g12.jpg">
+        <img src="assets/galeri/g13.jpg">
+        <img src="assets/galeri/g14.jpg">
+        <img src="assets/galeri/g15.jpg">
+        <img src="assets/galeri/g16.jpg">
+        <img src="assets/galeri/g17.jpg">
+        <img src="assets/galeri/g18.jpg">
+        <img src="assets/galeri/g19.jpg">
+        <img src="assets/galeri/g20.jpg">
+        <img src="assets/galeri/g21.jpg">
+        <img src="assets/galeri/g22.jpg">
+        <img src="assets/galeri/g23.jpg">
+        <img src="assets/galeri/g24.jpg">
+        <img src="assets/galeri/g25.jpg">
+        <img src="assets/galeri/g26.jpg">
+        <img src="assets/galeri/g27.jpg">
+        <img src="assets/galeri/g28.jpg">
+        <img src="assets/galeri/g29.jpg">
+        <img src="assets/galeri/g30.jpg">
+        <img src="assets/galeri/g31.jpg">
+        <img src="assets/galeri/g32.jpg">
+        <img src="assets/galeri/g33.jpg">
+        <img src="assets/galeri/g34.jpg">
+        <img src="assets/galeri/g35.jpg">
+        <img src="assets/galeri/g36.jpg">
+        <img src="assets/galeri/g37.jpg">
+        <img src="assets/galeri/g38.jpg">
+        <img src="assets/galeri/g39.jpg">
+        <img src="assets/galeri/g40.jpg">
+        <img src="assets/galeri/g41.jpg">
+        <img src="assets/galeri/g42.jpg">
+      </div>
+
+      
+    </section>
+  </div>
+  <script src="script.js"></script>
+
+<section id="struktur" class="content hidden">
+
+</section>
+
+</body>
+
+</html>
